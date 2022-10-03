@@ -212,7 +212,8 @@ section {
   line-height: 1.8;
 }
 
-.menu .box-container {
+.menu .box-container,
+.products .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   gap: 1.5rem;
@@ -226,11 +227,12 @@ section {
 
 .menu .box-container .box img {
   height: 25rem;
-  width: 20rem;
+  width: 50%;
   border-radius: 25%;
 }
 
-.menu .box-container .box h3 {
+.menu .box-container .box h3,
+.review .box-container .box h3 {
   color: #fff;
   font-size: 2rem;
   padding: 1rem 0;
@@ -253,12 +255,6 @@ section {
 
 .menu .box-container .box:hover > * {
   color: var(--black);
-}
-
-.products .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-  gap: 1.5rem;
 }
 
 .products .box-container .box {
@@ -298,7 +294,8 @@ section {
   padding: 1.5rem;
 }
 
-.products .box-container .box .content .stars i {
+.products .box-container .box .content .stars i,
+.review .box-container .box .stars i {
   font-size: 1.7rem;
   color: var(--main-color);
 }
@@ -314,7 +311,8 @@ section {
   font-size: 1.5rem;
 }
 
-.review .box-container {
+.review .box-container,
+.blogs .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
@@ -346,17 +344,6 @@ section {
 
 .review .box-container .box .user-box {
   align-self: flex-end;
-}
-
-.review .box-container .box h3 {
-  padding: 1rem 0;
-  font-size: 2rem;
-  color: #fff;
-}
-
-.review .box-container .box .stars i {
-  font-size: 1.5rem;
-  color: var(--main-color);
 }
 
 .quote {
@@ -411,12 +398,6 @@ section {
   color: #fff;
   text-transform: none;
   background: none;
-}
-
-.blogs .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 1.5rem;
 }
 
 .blogs .box-container .box {
